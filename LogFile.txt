@@ -726,3 +726,15 @@
 05 Feb 2023 22:40:41  INFO logger - MethodName :findElement
 05 Feb 2023 22:40:41  INFO logger - Exception :Element not foundBy.xpath: //ListItem[starts-with(@ClassName,'PrefsItemDelegate_QMLTYPE')][1]
 05 Feb 2023 22:40:41  INFO logger - -----------------------------------------------------------------------------------
+05 Feb 2023 22:56:17  INFO logger - --------------------------------------
+05 Feb 2023 22:56:23  INFO logger - Windows driver created
+05 Feb 2023 22:56:39  INFO logger - ClassName :cucumberIntegrationTests.screens.windows.WindowsAddItemScreen
+05 Feb 2023 22:56:39  INFO logger - MethodName :findElement
+05 Feb 2023 22:56:39  INFO logger - Exception :Element not foundBy.xpath: //ListItem[starts-with(@ClassName,'PrefsItemDelegate_QMLTYPE')][1]
+05 Feb 2023 22:56:39  INFO logger - -----------------------------------------------------------------------------------
+05 Feb 2023 22:56:42  INFO logger - --------------------------------------
+05 Feb 2023 22:56:47  INFO logger - Windows driver created
+05 Feb 2023 22:56:53  INFO logger - ClassName :cucumberIntegrationTests.screens.windows.WindowsAddItemScreen
+05 Feb 2023 22:56:53  INFO logger - MethodName :findElement
+05 Feb 2023 22:56:53  INFO logger - Exception :Element not foundBy.xpath: //Edit[starts-with(@ClassName,'BaseTextField_QMLTYPE')][@Name='Username']
+05 Feb 2023 22:56:53  INFO logger - -----------------------------------------------------------------------------------

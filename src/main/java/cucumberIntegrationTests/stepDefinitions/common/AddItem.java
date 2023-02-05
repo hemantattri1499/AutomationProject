@@ -37,7 +37,7 @@ public class AddItem {
 	        
 	    @Given("^I am on the main screen of Enpass$")
 	    public void i_am_on_the_main_screen_of_Enpass() {
-	     System.out.println("Welcone to Enpass App");
+	     System.out.println("Welcone to Enpass");
 	     
 	     
 	 }
