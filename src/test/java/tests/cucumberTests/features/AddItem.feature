@@ -1,6 +1,6 @@
 Feature: Create an item in Enpass app
     As a user
-    I want to be able to create an item in Enpass app...
+    I want to be able to create an item in Enpass
     So that I can save my login credentials securely
     
 Background:
