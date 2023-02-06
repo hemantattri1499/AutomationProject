@@ -56,7 +56,7 @@ public class LoginSteps {
 
     @Then("^user able to click on \"([^\"]*)\" button$")
     public void unlock(String arg0){
-    	iwindowsLoginScreen.unlockButton(arg0);
+    	iwindowsLoginScreen.unlockButton();
       
        
     }

@@ -27,60 +27,62 @@ public class AddItem {
 
 	}
 	
-	 
-	    
+
 	    @Given("^I am logged in to Enpass$")
-	    public void i_am_logged_in_to_Enpass() throws Exception {
-        
-	     
-	 }
-	        
-	    @Given("^I am on the main screen of Enpass$")
-	    public void i_am_on_the_main_screen_of_Enpass() {
-	     System.out.println("Welcone to Enpass");
-	     
-	     
-	 }
-
-	    @When("I tap on the \"Add Item\" button")
-	    public void tap_add_item() {
-	    	
-    	
-    	   iwindowsAdditemScreen.waitForVisibility(iwindowsAdditemScreen.AddItemButton);
-	       iwindowsAdditemScreen.findElement(iwindowsAdditemScreen.AddItemButton).click();
+	    public void i_am_logged_in_to_enpass() throws Throwable {
+	    	System.out.println("Welcome To Enpass");
 	    
 	    }
 
-	    @And("I select \"login\" as the category")
-	    public void select_login_category() {
-	    	iwindowsAdditemScreen.findElement(iwindowsAdditemScreen.loginButton).click();
+	    @Given("^I am on the main screen of Enpass$")
+	    public void i_am_on_the_main_screen_of_enpass() throws Throwable {
+	    	System.out.println("I am on the main screen");
+	   
 	    }
 
-	    @And("I \"Search\" the template for the login category")
-	    public void search_template_for_login() {
-	    	iwindowsAdditemScreen.findElement(iwindowsAdditemScreen.SearchField).sendKeys("Google");
+	    @When("^I tap on the Add Item button$")
+	    public void i_tap_on_the_add_item_button() throws Throwable {
+           iwindowsAdditemScreen.addItem();
+	       
 	    }
+
+	    @And("^I select \"([^\"]*)\" as the category$")
+	    public void i_select_something_as_the_category(String strArg1) throws Throwable {
+	    	iwindowsAdditemScreen.selectCategory();
+	   
+	    }
+
+	    @And("^I Search the template for the \"([^\"]*)\"$")
+	    public void i_search_the_template_for_the_something(String strArg1) throws Throwable {
+	    	iwindowsAdditemScreen.searchTemplate(strArg1);
+	      
+	    }
+
 	    @And("^I select the template from the search results$")
-	    public void i_select_the_template_from_the_search_results()  {
-	    	iwindowsAdditemScreen.findElement(iwindowsAdditemScreen.Template).click();
-	        
+	    public void i_select_the_template_from_the_search_results() throws Throwable {
+	    	iwindowsAdditemScreen.SearchResults();
+	       
 	    }
 
-	    @And("I enter \"username\" in the \"Username\" field")
-	    public void enter_username() {
-	    	iwindowsAdditemScreen.findElement(iwindowsAdditemScreen.UserName).sendKeys("a");
-	        
+	    @And("^I enter \"([^\"]*)\" in the Username field$")
+	    public void i_enter_something_in_the_username_field(String strArg1) throws Throwable {
+	    	iwindowsAdditemScreen.userNameField(strArg1);
+	     
 	    }
 
-	    @And("I enter \"password\" in the \"Password\" field")
-	    public void enter_password() {
-	    	iwindowsAdditemScreen.findElement(iwindowsAdditemScreen.Password).sendKeys("abc");
+	    @And("^I enter \"([^\"]*)\" in the Password field$")
+	    public void i_enter_something_in_the_password_field(String strArg1) throws Throwable {
+	    	iwindowsAdditemScreen.passwordField(strArg1);
+	     
 	    }
 
-	    @And("I tap on the \"Save\" button")
-	    public void tap_save() {
-	    	iwindowsAdditemScreen.findElement(iwindowsAdditemScreen.SaveButton).click();
+	    @And("^I tap on the \"([^\"]*)\" button$")
+	    public void i_tap_on_the_something_button(String strArg1) throws Throwable {
+	    	iwindowsAdditemScreen.saveButton();
+	       
 	    }
+	    
+
 
 	   
 	}       

@@ -8,11 +8,11 @@ Background:
 
 Scenario: Successfully creating an item in Enpass
   Given I am on the main screen of Enpass
-   When I tap on the "Add Item" button
+   When I tap on the Add Item button
     And I select "login" as the category
-    And I "Search" the template for the login category
+    And I Search the template for the "google"
     And I select the template from the search results
-    And I enter "username" in the "Username" field
-    And I enter "password" in the "Password" field
+    And I enter "hemant" in the Username field
+    And I enter "attri" in the Password field
     And I tap on the "Save" button
     

@@ -44,7 +44,7 @@ public class WindowsLoginScreen extends GenericMethods {
     }
 
     
-    public void unlockButton(String arg0){
+    public void unlockButton(){
        waitForVisibility(unlock);
        findElement(unlock).click();
        
