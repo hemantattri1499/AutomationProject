@@ -2,6 +2,9 @@ package cucumberIntegrationTests.screens.windows;
 
 import UITestFramework.GenericMethods;
 
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.net.PasswordAuthentication;
 import java.util.Properties;
 
 import org.openqa.selenium.By;
@@ -13,24 +16,26 @@ import org.openqa.selenium.WebDriver;
  */
 public class WindowsLoginScreen extends GenericMethods {
 
-	public WindowsLoginScreen(WebDriver driver) {
+	public WindowsLoginScreen(WebDriver driver) throws IOException {
 		super(driver);
-		// TODO Auto-generated constructor stub
+		
+//		   Properties prop = new Properties();
+//		   FileInputStream file = new FileInputStream("C:\\Users\\HemantAttri\\Documents\\automation-framework\\automation-framework\\src\\main\\java\\testData\\en_US_windows.properties");
+//		   password= prop.load(file);
+//		// TODO Auto-generated constructor stub
 	}
     Properties configFileObject;
-    String password;
-
-
-	public By masterpassword = By.name("Master Password");
+    public By masterpassword = By.name("Master Password");
 	public By unlock = By.name("Unlock");
 
     public void hi() {
-	   System.out.println("Enter the master password");
+
 }
     	    
-    public void userEntersCredential(){
+    public void userEntersCredential(String args){
     	waitForVisibility(masterpassword);
-        findElement(masterpassword).sendKeys(password);
+        findElement(masterpassword).sendKeys(args);
+        System.out.println("q");
         
     }
     

@@ -738,3 +738,35 @@
 05 Feb 2023 22:56:53  INFO logger - MethodName :findElement
 05 Feb 2023 22:56:53  INFO logger - Exception :Element not foundBy.xpath: //Edit[starts-with(@ClassName,'BaseTextField_QMLTYPE')][@Name='Username']
 05 Feb 2023 22:56:53  INFO logger - -----------------------------------------------------------------------------------
+06 Feb 2023 14:33:54  INFO logger - --------------------------------------
+06 Feb 2023 14:34:21  INFO logger - --------------------------------------
+06 Feb 2023 14:34:32  INFO logger - Windows driver created
+06 Feb 2023 14:35:00  INFO logger - --------------------------------------
+06 Feb 2023 14:36:18  INFO logger - --------------------------------------
+06 Feb 2023 14:36:56  INFO logger - --------------------------------------
+06 Feb 2023 14:38:53  INFO logger - --------------------------------------
+06 Feb 2023 14:38:56  INFO logger - Windows driver created
+06 Feb 2023 14:41:48  INFO logger - --------------------------------------
+06 Feb 2023 14:41:51  INFO logger - Windows driver created
+06 Feb 2023 14:52:23  INFO logger - --------------------------------------
+06 Feb 2023 14:52:26  INFO logger - Windows driver created
+06 Feb 2023 15:26:21  INFO logger - --------------------------------------
+06 Feb 2023 15:26:24  INFO logger - Windows driver created
+06 Feb 2023 15:28:02  INFO logger - --------------------------------------
+06 Feb 2023 15:28:05  INFO logger - Windows driver created
+06 Feb 2023 15:28:20  INFO logger - --------------------------------------
+06 Feb 2023 15:28:22  INFO logger - Windows driver created
+06 Feb 2023 15:29:35  INFO logger - --------------------------------------
+06 Feb 2023 15:29:38  INFO logger - Windows driver created
+06 Feb 2023 15:38:53  INFO logger - --------------------------------------
+06 Feb 2023 15:38:56  INFO logger - Windows driver created
+06 Feb 2023 15:40:24  INFO logger - --------------------------------------
+06 Feb 2023 15:40:27  INFO logger - Windows driver created
+06 Feb 2023 15:40:38  INFO logger - --------------------------------------
+06 Feb 2023 15:40:41  INFO logger - Windows driver created
+06 Feb 2023 15:46:42  INFO logger - --------------------------------------
+06 Feb 2023 15:46:44  INFO logger - Windows driver created
+06 Feb 2023 15:58:53  INFO logger - --------------------------------------
+06 Feb 2023 15:58:56  INFO logger - Windows driver created
+06 Feb 2023 15:59:43  INFO logger - --------------------------------------
+06 Feb 2023 15:59:45  INFO logger - Windows driver created

@@ -12,6 +12,7 @@ import cucumberIntegrationTests.screens.windows.WindowsLoginScreen;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import java.io.IOException;
 import java.util.Properties;
 
 public class LoginSteps {
@@ -19,16 +20,19 @@ public class LoginSteps {
     IOSLoginScreen iosLoginScreen;
     WindowsLoginScreen iwindowsLoginScreen;
     WebDriver driver;
+    String password;
     Properties configFileObject;
     BaseSteps baseSteps;
 
 
 
-    public LoginSteps(BaseSteps baseSteps) {
+    public LoginSteps(BaseSteps baseSteps) throws IOException {
         this.baseSteps = baseSteps;
         driver = baseSteps.driver;
     	iwindowsLoginScreen = new WindowsLoginScreen(driver);
-        configFileObject = CreateSessionCucumber.localeConfigProp;
+    	configFileObject = CreateSessionCucumber.localeConfigProp;
+        password = configFileObject.getProperty("password");
+
     }
     
     @And("^user has valid masterpassword$")
@@ -38,7 +42,7 @@ public class LoginSteps {
 
     @When("^user enters masterpassword$")
     public void userEntersCredentials()  {
-    	iwindowsLoginScreen.userEntersCredential();
+    	iwindowsLoginScreen.userEntersCredential(password);
     	
     	
     	
