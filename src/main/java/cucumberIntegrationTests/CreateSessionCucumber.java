@@ -3,6 +3,7 @@ package cucumberIntegrationTests;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.windows.WindowsDriver;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import io.appium.java_client.remote.MobileCapabilityType;
 import logger.Log;
 import org.apache.commons.exec.CommandLine;
@@ -11,6 +12,8 @@ import org.apache.commons.exec.DefaultExecutor;
 import org.apache.commons.exec.ExecuteException;
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -188,6 +191,14 @@ public class CreateSessionCucumber {
 		capabilities.setCapability("app", app.getAbsolutePath());
 		driver  = new WindowsDriver( new URL("http://localhost:4723/wd/hub"), capabilities);
 
+	}
+	
+	public void chromeDriver() {
+		WebDriverManager.chromedriver().setup();
+		ChromeOptions options = new ChromeOptions();
+		options.setExperimentalOption("debuggerAddress", "localhost:9288");
+		WebDriver chrome = new ChromeDriver(options);
+		
 	}
 
 

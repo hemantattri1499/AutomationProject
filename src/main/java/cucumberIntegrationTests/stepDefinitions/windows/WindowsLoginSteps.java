@@ -12,11 +12,5 @@ public class WindowsLoginSteps {
     	iwindowsLoginScreen = new WindowsLoginScreen(createSession.driver);
     }
     
-  /*  public class WindowsAddItem {
-        WindowsLoginScreen iwindowsLoginScreen;
 
-        public WindowsLoginSteps(CreateSession createSession) {
-        	iwindowsLoginScreen = new WindowsLoginScreen(createSession.driver);
-        } 
-*/
 }
