@@ -10,6 +10,8 @@ import java.util.Properties;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import com.github.dockerjava.api.model.Driver;
+
 
 /**
  * contains all the locators present on the login screen of iOS app.
@@ -46,7 +48,8 @@ public class WindowsLoginScreen extends GenericMethods {
     
     public void unlockButton(){
        waitForVisibility(unlock);
-       findElement(unlock).click();
+       click(unlock);
+       
        
     }
 

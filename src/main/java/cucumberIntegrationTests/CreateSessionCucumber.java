@@ -189,15 +189,17 @@ public class CreateSessionCucumber {
 		capabilities.setCapability("name", methodName.getName());
 		capabilities.setCapability("deviceName","WindowsPC"); 
 		capabilities.setCapability("app", app.getAbsolutePath());
+		capabilities.setCapability("forceMjsonwp", true);
 		driver  = new WindowsDriver( new URL("http://localhost:4723/wd/hub"), capabilities);
 
 	}
 	
-	public void chromeDriver() {
+	public static WebDriver chromeDriver() {
 		WebDriverManager.chromedriver().setup();
 		ChromeOptions options = new ChromeOptions();
 		options.setExperimentalOption("debuggerAddress", "localhost:9288");
 		WebDriver chrome = new ChromeDriver(options);
+		return chrome;
 		
 	}
 
