@@ -16,7 +16,7 @@ public class WindowsAddVaultScreen extends GenericMethods {
 	}
 	public By settings = By.xpath("//Button[starts-with(@ClassName,'ToolItem_QMLTYPE')][@Name='Settings']");
     public By vaultSettings = By.xpath("//TabItem[starts-with(@ClassName,'PrefsTabButton_QMLTYPE')][@Name='Vaults']");
-	public By addItem = By.xpath("//Text[starts-with(@ClassName,'Label_QMLTYPE')][@Name='Add new vault']");
+	public By addVault = By.xpath("//Text[starts-with(@ClassName,'Label_QMLTYPE')][@Name='Add new vault']");
 	public By thisPC = By.xpath("//Text[starts-with(@ClassName,'Label_QMLTYPE')][@Name='This PC']");
 	public By createNewLocalVault = By.xpath("//Text[starts-with(@ClassName,'Label_QMLTYPE')][@Name='Create a new vault']");
 	public By enterVaultName = By.xpath("//Edit[starts-with(@ClassName,'BaseTextField_QMLTYPE')]");
@@ -38,8 +38,8 @@ public class WindowsAddVaultScreen extends GenericMethods {
    }
    
    public void addVaultMethod() {
-	   waitForVisibility(addItem);
-		click(addItem);
+	   waitForVisibility(addVault);
+		click(addVault);
 	
 }
    public void thisPCMethod() {
