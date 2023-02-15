@@ -26,6 +26,7 @@ public class Import {
         configFileObject = CreateSessionCucumber.localeConfigProp;
         path = configFileObject.getProperty("path");
         importScreen = new WindowsImportScreen(driver);
+        addVault = new WindowsAddVaultScreen(driver);
 	}
 	@Given("^I am on the Enpass main screen$")
 	public void i_am_on_the_Enpass_main_screen() throws Throwable {
@@ -75,14 +76,16 @@ public class Import {
 	    // Write code here that turns the phrase above into concrete actions
 		
 		importScreen.chooseFileMethod(path);
+		importScreen.openMethod();
 		
 	   
 	}
 
 	@When("^click on the Continue button$")
 	public void click_on_the_Continue_button() throws Throwable {
-	   importScreen.continueMethod();
-	   importScreen.continueMethod();
+	   addVault.continueButtonMethod();
+	   addVault.continueButtonMethod();
+	   
 	}
 
 	@Then("^succcess message should appear$")

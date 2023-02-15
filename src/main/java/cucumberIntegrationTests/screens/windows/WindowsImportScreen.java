@@ -75,10 +75,7 @@ public class WindowsImportScreen extends GenericMethods {
 		click(open);
 	}
 	
-	public void continueMethod()
-	{
-		addVault.continueButtonMethod();
-		addVault.continueButtonMethod();
+	
 		
 		
 	}
@@ -86,4 +83,4 @@ public class WindowsImportScreen extends GenericMethods {
 	
 	
 	
-}
+
